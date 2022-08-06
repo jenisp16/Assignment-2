@@ -1,0 +1,42 @@
+//Name : Jenis Patel
+//Student ID : 21CE093
+//Aim : To find the area of Circle
+
+import java.util.Scanner;
+class Circle
+{
+    double radius=1;
+    final double pi=3.14;
+    public Circle()
+    {
+
+    }
+    public Circle(double r)
+    {
+
+        radius=r;
+    }
+    public double getArea()
+    {
+
+        return pi*radius*radius;
+    }
+    public double getperimeter()
+    {
+
+        return 2*pi*radius;
+    }
+
+}
+public class Prac_1 {
+    public static void main(String[] args) {
+        Circle c1 = new Circle();
+        System.out.println("Area is " + c1.getArea() + " Perimeter is " + c1.getperimeter());
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the radius of circle:");
+        double r=sc.nextDouble();
+        Circle c2 = new Circle(r);
+        System.out.printf("Area is " + c2.getArea() + " Perimeter is " + c2.getperimeter());
+
+    }
+}
